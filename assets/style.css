@@ -1,0 +1,134 @@
+:root {
+  /*Primary*/
+  --Soft--blue: rgb(139, 172, 218);
+  --Cyan: hsl(178, 100%, 50%);
+  --Hover: rgb(0, 255, 247, 0.5);
+  /* Color Neutro*/
+  --Fondo1: hsl(217, 54%, 11%); /*(main BG) */
+  --Fondo2: hsl(216, 50%, 16%); /*(card BG) */
+  --Fondo-card: hsl(215, 32%, 27%); /*(line) */
+  --White: hsl(0, 0%, 100%);
+  /*Font*/
+  --Font-size: 18px; /* (paragraph)*/
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Fondo1);
+}
+h1 {
+  color: var(--White);
+}
+img {
+  max-width: 100%;
+}
+picture > img {
+  border-radius: 10px;
+}
+hr {
+  border-color: hsl(215deg 28% 42%);
+}
+h1:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+.avatar div img {
+  width: 2em;
+  height: 2em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 100%;
+}
+
+.avatar p {
+  margin-left: 1em;
+}
+.avatar span {
+  color: var(--White);
+}
+
+.container {
+  background-color: var(--Fondo2);
+  width: 20em;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.content-text h1 {
+  align-items: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.text-span {
+  margin-left: 0.4em;
+}
+.content-Text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2em;
+}
+.imagen {
+  vertical-align: middle;
+}
+.texto {
+  text-align: center;
+}
+.eth {
+  color: var(--Cyan);
+}
+.day {
+  color: var(--Soft--blue);
+}
+.Jules {
+  margin-left: 3px;
+}
+.Jules:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+.font-size {
+  font-size: 18px;
+}
+.box {
+  position: relative;
+}
+
+.hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 3px;
+  position: absolute;
+  width: 38.3vh; /* */
+  height: 38.3vh;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.hover:hover {
+  opacity: 1;
+  width: 38.3vh;
+  cursor: pointer;
+  background-color: var(--Hover);
+  visibility: visible;
+}
+.attribution {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
